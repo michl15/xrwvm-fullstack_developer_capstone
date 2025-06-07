@@ -110,7 +110,7 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
   } catch (error) {
 		console.log(error);
     res.status(500).json({ error: 'Error inserting review' });
-  }
+  } 
 });
 
 // Start the Express server
